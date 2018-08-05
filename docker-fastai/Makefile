@@ -8,6 +8,7 @@ PORT = 8891
 ################################################################
 
 .PHONY: docker-build docker-login docker-run 
+SHELL := /bin/bash
 
 # assumes env variable NVIDIAKEY is set - 
 # e.g., in .bashrc do,
@@ -33,7 +34,7 @@ docker-run:
 
 # Bring up the jupyter server (most of the time)
 notebook:
-	source activate fastai; cd /fastai; jupyter notebook
+	source activate fastai && cd /fastai && jupyter notebook
 	
 # Run this (first time)
 build-fastai:
