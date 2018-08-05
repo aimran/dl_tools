@@ -41,6 +41,13 @@ make build-fastai
 
 
 ### Running jupyter server
+1. Start container
+
+```shell
+make docker-run
+```
+
+2. Start notebook
 
 ```shell
 make notebook

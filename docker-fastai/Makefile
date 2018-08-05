@@ -21,7 +21,8 @@ docker-build: docker-login
 	docker tag $(NAME):$(VERSION) $(REGISTRY)/$(NAME):$(VERSION)
 
 docker-run:
-	docker run --rm -ti -v $(PWD):/code \
+	docker run --rm -ti --runtime=nvidia \
+			    -v $(PWD):/code \
 			    -v $(DATADIR):/mnt/data \
 			    -v $(CODEDIR):/fastai \
 			    -p $(PORT):8891 \
