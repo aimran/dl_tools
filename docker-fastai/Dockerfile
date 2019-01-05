@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:18.05-py3
+FROM nvcr.io/nvidia/pytorch:18.12.1-py3
 
 LABEL maintainer="Asif Imran <asif_imran@icloud.com>"
 

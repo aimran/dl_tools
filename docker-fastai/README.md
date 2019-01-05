@@ -8,7 +8,7 @@ and utilities (this repo!)
 
 Preliminary:
 
-1. Tested on ubuntu 16.04 only  
+1. Tested on ubuntu 18.04 only  
 2. Install latest nvidia drivers (_not_ dev packages like CuDNN) for your machine
 3. Install docker (see `install/01_install_docker.sh`)  
 4. Install nvidia-docker (see `install/02_install_nvidia_docker.sh`)  
